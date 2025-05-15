@@ -1,0 +1,203 @@
+/* ========================================
+   CUSTOM STYLES FOR COURSEBOX
+   
+   This stylesheet contains all custom styling for the CourseBox e-learning website.
+   It includes color variables, component styling, and RTL support for Persian language.
+   ======================================== */
+
+/* Primary color variables - Using CSS variables for consistent theming across the site */
+:root {
+  --primary-color: #931222; /* Main brand color - deep burgundy */
+  --primary-hover: #7a0f1c; /* Darker shade for hover states */
+  --primary-light: #b83e4d; /* Lighter shade for accents and highlights */
+  --primary-very-light: #f8e6e8; /* Very light shade for backgrounds and subtle elements */
+}
+
+/* RTL Support for Persian language */
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", "Tahoma", sans-serif;
+}
+
+/* Flip Bootstrap components for RTL */
+.navbar-nav {
+  padding-right: 0;
+}
+
+.dropdown-menu {
+  text-align: right;
+}
+
+.me-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.me-2,
+.me-3,
+.me-4 {
+  margin-left: 0.5rem !important;
+  margin-right: 0 !important;
+}
+
+.ms-2,
+.ms-3,
+.ms-4 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+.text-md-end {
+  text-align: left !important;
+}
+
+.text-end {
+  text-align: left !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  padding: 2rem 0;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Override Bootstrap's primary color */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+/* Footer styling */
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(147, 18, 34, 0.25);
+}
+
+/* Badge styling */
+.badge {
+  font-weight: 500;
+  padding: 0.5em 0.7em;
+}
+
+/* Status colors */
+.status-pill {
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section .btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Active nav link */
+.navbar-dark .navbar-nav .nav-link.active {
+  color: white;
+  font-weight: 500;
+}
+
+/* Order steps */
+.order-steps .step {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.order-steps .step:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: 15px; /* Changed from left to right for RTL */
+  top: 30px;
+  height: calc(100% - 30px);
+  width: 2px;
+  background-color: #dee2e6;
+}
+
+.order-steps .step.completed:after {
+  background-color: var(--primary-color);
+}
+
+.order-steps .step-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #dee2e6;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px; /* Changed from margin-right to margin-left for RTL */
+}
+
+.order-steps .step.completed .step-icon {
+  background-color: var(--primary-color);
+}
+
+.order-steps .step.active .step-icon {
+  background-color: var(--primary-light);
+}
+
+/* Fix for Bootstrap icons in RTL */
+.bi {
+  display: inline-block;
+}
+
