@@ -1,27 +1,24 @@
-📚 CourseBox
-CourseBox is an online course management system built with PHP and MySQL. It enables administrators to manage courses and content, and provides users with access to educational materials through a clean, responsive interface.
+# 📚 CourseBox
 
-✅ Features
-Add, edit, and delete courses
+**CourseBox** is an online course management system built with PHP and MySQL. It enables administrators to manage courses and content, and provides users with access to educational materials through a clean, responsive interface.
 
-Upload course thumbnails and descriptions
+## ✅ Features
 
-Admin panel for course management
+- Add, edit, and delete courses
+- Upload course thumbnails and descriptions
+- Admin panel for course management
+- Responsive UI with modals for input
+- Built using vanilla PHP, MySQL, HTML/CSS, and JavaScript
 
-Responsive UI with modals for input
+## 🖥️ Demo
 
-Built using vanilla PHP, MySQL, HTML/CSS, and JavaScript
-
-🖥️ Demo
 Coming soon...
 
-📦 Installation
-Clone this repo:
+## 📦 Installation
 
-bash
-Copy
-Edit
-git clone https://github.com/mahdimirbagheri/coursebox.git
+1. **Clone this repo**:
+   ```bash
+   git clone https://github.com/mahdimirbagheri/coursebox.git
 Set up your database:
 
 Import coursebox.sql into your MySQL server
