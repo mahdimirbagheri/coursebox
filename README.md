@@ -10,42 +10,32 @@
 - Responsive UI with modals for input
 - Built using vanilla PHP, MySQL, HTML/CSS, and JavaScript
 
-## 🖥️ Demo
-
-Coming soon...
-
 ## 📦 Installation
 
 1. **Clone this repo**:
    ```bash
    git clone https://github.com/mahdimirbagheri/coursebox.git
-Set up your database:
+   ```
 
-Import coursebox.sql into your MySQL server
+2. **Set up your database**:
+   - Import `coursebox.sql` into your MySQL server
+   - Edit `config.php` with your database credentials
 
-Edit config.php with your database credentials
+3. **Run locally**:
+   - Place the folder in your local server directory (e.g., `htdocs` for XAMPP)
+   - Start Apache and MySQL
+   - Visit `http://localhost/coursebox/`
 
-Run locally:
+## 🧑‍💻 Technologies Used
 
-Place the folder in your local server directory (e.g., htdocs for XAMPP)
+- PHP
+- MySQL
+- HTML5 / CSS3
+- JavaScript
 
-Start Apache and MySQL
+## 📂 Project Structure
 
-Visit http://localhost/coursebox/
-
-🧑‍💻 Technologies Used
-PHP
-
-MySQL
-
-HTML5 / CSS3
-
-JavaScript
-
-📂 Project Structure
-bash
-Copy
-Edit
+```
 coursebox/
 │
 ├── admin/                  # Admin dashboard
@@ -55,9 +45,13 @@ coursebox/
 ├── index.php               # Main landing page
 ├── config.php              # DB config
 └── README.md               # This file
-✍️ Author
-Developed by Mahdi Mirbagheri
+```
+
+## ✍️ Author
+
+Developed by [Mahdi Mirbagheri](https://github.com/mahdimirbagheri)  
 Inspired by real-world admin dashboard use cases.
 
-📄 License
-This project is open-source and available under the MIT License.
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
